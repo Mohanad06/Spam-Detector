@@ -104,6 +104,15 @@ st.title(" SMS / Email Spam Detector")
 st.markdown("**Paste your message below and instantly know if it's spam or not.**")
 st.markdown("---")
 
+st.markdown("""
+<style>
+textarea::placeholder {
+    color: white !important;
+    opacity: 1 !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 input_sms = st.text_area(
     " Enter your message here:",
     placeholder="e.g. Congratulations! You've won a $1000 gift card. Click here to claim...",
